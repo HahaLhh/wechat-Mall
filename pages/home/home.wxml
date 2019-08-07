@@ -1,0 +1,13 @@
+<!--pages/home/home.wxml-->
+<!-- 展示轮播图 -->
+<w-swiper list="{{banners}}"></w-swiper>
+<!-- 推荐数据展示 -->
+<w-recommend items="{{recommends}}"></w-recommend>
+<!-- 本周流行 -->
+<view class="popular">
+  <image src="/assets/images/home/recommend_bg.jpg" mode="widthFix"></image>
+</view>
+<!-- tabel组件 -->
+<w-tab-control titles="{{tabelValue}}" bind:handleEvent="handleClick"></w-tab-control>
+<!-- 展示商品·数据 -->
+<w-goods goods="{{goods[currentType].list}}"/>

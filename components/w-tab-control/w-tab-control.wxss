@@ -1,0 +1,17 @@
+/* components/w-tab-control/w-tab-control.wxss */
+.tab-control{
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.tab-item{
+  flex: 1 ;
+  text-align: center;
+}
+.firstColor{
+  color: red;
+}
+.firstColor text{
+  padding: 15rpx 16rpx;
+  border-bottom: 6rpx solid gray;
+}
